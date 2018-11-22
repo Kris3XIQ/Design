@@ -1,3 +1,3 @@
 #### Redovisa på GitHub
 
-Mitt redovisa-repo kan du hitta här: [https://github.com/Kris3XIQ/Design](XXX).
+Mitt redovisa-repo kan du hitta här: [Kris3XIQ/Design](https://github.com/Kris3XIQ/Design).
