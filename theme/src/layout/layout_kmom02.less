@@ -1,0 +1,407 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+
+ /* ========================================================================
+General Layout
+ ==========================================================================*/
+.inner-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+// /* Hide submenu, leave this to kmom02 */
+// .rm-desktop ul {
+//     display: none;
+// }
+//
+// /* Hide responsive/mobile menu, leave this to kmom02 */
+// .rm-navbar-max {
+//     display: none;
+// }
+
+/* ========================================================================
+HEADER
+==========================================================================*/
+.my-navbar {
+    position: fixed;
+    margin-top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 10px 100px;
+    text-align: center;
+}
+
+.row {
+    display: block;
+    width: 100%;
+    margin-left: -1%;
+    margin-right: -1%;
+}
+
+.inner-wrap-header .row {
+    max-width: 100%;
+}
+
+.inner-wrap.inner-wrap-header {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+}
+
+.rm-desktop li {
+    position: relative;
+}
+
+.rm-default li {
+    display: inline-block;
+}
+
+/* ================================
+Left Region Column 1
+=================================*/
+
+.region-header-col-1 {
+    display: inline;
+    float: left;
+    width: 20%;
+}
+
+.site-logo {
+    float: left;
+    display: none;
+}
+
+.site-logo-text {
+    float: left;
+    padding: 40px;
+}
+
+/* ================================
+Center Region Column 2
+=================================*/
+
+.region-header-col-2 {
+    display: inline;
+    float: left;
+    width: 60%;
+}
+
+.outer-wrap-header {
+    height: 48px;
+    margin-bottom: 12px;
+}
+
+.rm-navbar {
+    text-align: center;
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 0;
+    position: relative;
+}
+
+.rm-navbar ul {
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    background-color: #303030;
+}
+.rm-navbar li a {
+    font-family: Helvetica, 'Sans Serif';
+    font-weight: lighter;
+    line-height: 50px;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.rm-default ul li {
+    background-color: #151515;
+    box-shadow: 0 0 1px 1px #131313;
+}
+
+.rm-navbar li a:hover {
+    color: #FF7D0A !important;
+    text-decoration: underline;
+}
+
+
+/* ================================
+Right Region Column 3
+=================================*/
+
+.region-header-col-3 {
+    display: inline;
+    float: left;
+    width: 20%;
+}
+
+.rm-submenu-button {
+    position: absolute;
+}
+
+a.rm-button .rm-button-face-1 {
+    position: fixed !important;
+    transition: color .1s ease;
+}
+
+.rm-max .rm-small {
+    display: block;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.rm-max.rm-navbar {
+    position: absolute;
+    top: 30px;
+    right: 24px;
+}
+
+.rm-navbar-max.rm-navbar {
+    display: inline-block;
+}
+
+/* ========================================================================
+Content (My main content for my pages)
+==========================================================================*/
+.inner-wrap-main {
+    overflow: auto;
+}
+
+.region-main {
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: left;
+    overflow: auto;
+    min-height: 15em;
+
+    &.has-sidebar {
+        width: 68%;
+        margin-left: 1%;
+    }
+
+    &.has-sidebar-left.has-sidebar-right {
+        width: 56%;
+        margin-left: 2%;
+        min-height: 15em;
+    }
+}
+
+.region-sidebar-left,
+.region-sidebar-right {
+    width: 28%;
+    margin-left: 1%;
+    float: left;
+}
+
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+    width: 20%;
+    margin-left: 5px;
+    float: left;
+}
+
+figure.figure.right {
+    float: right;
+    margin-left: 8px;
+}
+
+.inner-wrap-main {
+    padding-bottom: 48px;
+}
+
+.inner-wrap {
+    clear:both;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1100px;
+}
+
+/*==========================================================
+CONTENT (With sidebar to the right)
+==========================================================*/
+
+.article {
+    padding-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    float: left;
+    min-height: 15em;
+}
+
+.article h1 {
+    font-size: 48px;
+    font-weight: lighter;
+    line-height: 1em;
+    border-bottom: 1px solid #666;
+    margin-bottom: 24px;
+}
+
+.article p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.wrap-sidebar .block {
+    margin-bottom: 50px;
+}
+
+.wrap-sidebar .block h4 {
+    border-bottom: 1px solid #FF7D0A;
+    font-size: 16px;
+}
+
+.breadcrumb-list ul {
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+/*==========================================================
+CONTENT (With sidebar to the left)
+==========================================================*/
+
+.region-sidebar-left.wrap-sidebar .block h4 {
+    border-bottom: 1px solid #FF7D0A;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 250;
+}
+
+.toc .section-header {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.toc {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.next-previous {
+    margin-bottom: 24px;
+}
+
+.next-previous .next {
+    float: right;
+    text-align: right;
+}
+
+.next-previous .previous {
+    width: 50%;
+}
+
+/*==========================================================
+BYLINE
+==========================================================*/
+
+.author-byline {
+    border: 1px solid #FF7D0A;
+    margin-bottom: 46px;
+    width: 800px;
+    height: 150px;
+    clear: both;
+}
+
+.author-byline p {
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+.author-byline figcaption {
+    margin-top: 2px;
+    margin-bottom: 24px;
+    padding-bottom: 38px;
+}
+
+.author-byline figcaption p {
+    margin-top: 0px;
+    text-align: left;
+}
+
+figure.figure.left {
+    float: left;
+    margin-right: 8px;
+}
+
+/* ========================================================================
+FOOTER
+==========================================================================*/
+.outer-wrap-footer {
+    background-color: #707070;
+    padding-top: 24px;
+    padding-bottom: 48px;
+}
+
+.inner-wrap {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1100px;
+}
+
+.row {
+    display: block;
+    width: 100%;
+    margin-left: -.5%;
+    margin-right: -.5%;
+}
+
+.region-footer {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin-left: .5%;
+    margin-right: .5%;
+    border-bottom: 1px solid #FF7D0A;
+}
+
+.footer-column-wrapper {
+    color: #ddd;
+    padding-bottom: 24px;
+    margin-bottom: 48px;
+}
+
+.footer-column {
+    height: 100%;
+    display: inline;
+    float: left;
+    width: 32%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+.footer-column-2, .footer-column-3 {
+    padding-left: 1em;
+}
+.footer-column-1, .footer-column-2 {
+    border-right: 1px solid #FF7D0A;
+}
+.footer-column-x {
+    padding-bottom: 24px;
+    padding-right: 1em;
+}
+
+.block.site-footer {
+    color: #aaa;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
