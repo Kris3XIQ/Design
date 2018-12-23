@@ -1,5 +1,10 @@
 Revision history
 ========================
+v3.0.4 (2018-12-23)
+* Adding kmom03 to my responsive menu and the top-menu navbar
+
+
+--------------------------
 v3.0.3 (2018-12-23)
 * Adding report and pushing & tagging it 3.0.3
 
