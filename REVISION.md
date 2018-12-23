@@ -1,6 +1,9 @@
 Revision history
 ========================
 
+v3.0.2 (2018-12-23)
+* Adding tags and pushing the finished product to GitHub
+
 --------------------------
 v3.0.1 (2018-12-23)
 * Done with KMOM03 and activated kmom03 as default stylesheet
