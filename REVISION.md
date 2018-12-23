@@ -1,6 +1,9 @@
 Revision history
 ========================
+v3.0.3 (2018-12-23)
+* Adding report and pushing & tagging it 3.0.3
 
+--------------------------
 v3.0.2 (2018-12-23)
 * Adding tags and pushing the finished product to GitHub
 
