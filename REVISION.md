@@ -1,7 +1,12 @@
 Revision history
 ========================
+v4.0.1 (2018-12-28)
+* Pushing tags.
+
+
+--------------------------
 v4.0.0 (2018-12-28)
-* Worked through and completed KMOM04, also pushing tags in one-go.
+* Worked through and completed KMOM04.
 
 
 --------------------------
