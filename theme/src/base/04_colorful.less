@@ -1,0 +1,32 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorHtml: #d26f89;
+@bgColorBody: #8cf2fa; // #fff;
+@colorBody: #0b2260;
+// Change the typographic grid to my style
+@fontFamilyHeadings: @fontFamilyHelveticaNeue;
+@fontFamilyBody: @fontFamilyMyriadPro;
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: @colorBody;
+    background-color: @bgColorBody;
+    // font: 100.01%/1 @fontFamilyBody;
+    #desinax-hgrid.font(@fontSizeBody);
+}
+
+img {
+    border-style: none;
+    max-width: 100%;
+    max-height: 400px;
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();

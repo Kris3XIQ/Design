@@ -1,0 +1,257 @@
+/**
+ * Layout for KMOM03 using vgrid
+ *
+ */
+
+ /* ========================================================================
+General Layout
+ ==========================================================================*/
+ .row {
+     #desinax-vgrid.row();
+
+     margin-bottom: 12px;
+ }
+
+
+.inner-wrap {
+    #desinax-vgrid.grid(1100px);
+}
+
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 1100px);
+
+    &.inner-wrap-header {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+.site-logo {
+    display: none;
+}
+
+/* ========================================================================
+Header Layout
+==========================================================================*/
+
+.outer-wrap-header {
+    background-color: #d26f89;
+}
+
+.inner-wrap-header {
+    #desinax-vgrid.grid(99%);
+
+    background-color: #d26f89;
+}
+
+.region-header-col-1,
+.region-header-col-3 {
+    #desinax-vgrid.column(5);
+}
+
+.region-header-col-2 {
+    #desinax-vgrid.column(14);
+    color: #fff;
+    text-align: center;
+}
+
+.region-flash {
+    #desinax-vgrid.column(@columns);
+}
+
+.region-breadcrumb {
+    #desinax-vgrid.column(@columns);
+}
+
+.rm-navbar ul {
+    color: #7cf2f8;
+    text-transform: uppercase;
+}
+
+.rm-navbar ul li a:hover {
+    color: #11427b;
+}
+
+.rm-default ul li {
+    background-color: #d26f89;
+}
+
+.rm-max .rm-mobile {
+    background-color: #da7a92;
+}
+
+/* ==============================
+Main and Sidebars
+===============================*/
+
+.inner-wrap-main {
+    // overflow: auto;
+}
+
+.region-main,
+.region-sidebar-left,
+.region-sidebar-right {
+    // overflow: auto;
+}
+
+.region-main {
+    #desinax-vgrid.column(@columns * 3 / 4);
+    #desinax-vgrid.push(3);
+
+    &.has-sidebar {
+        #desinax-vgrid.push(0);
+    }
+
+    &.has-sidebar-right {
+        #desinax-vgrid.column(@columns * 3 / 4 - 1);
+    }
+
+    &.has-sidebar-left.has-sidebar-right {
+        #desinax-vgrid.column(@columns - 10);
+    }
+}
+
+.region-sidebar-left,
+.region-sidebar-right {
+    #desinax-vgrid.column(@columns * 1 / 4);
+}
+
+&.has-sidebar-right {
+    #desinax-vgrid.push(1);
+}
+
+
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+    #desinax-vgrid.column(@columns * 1 / 4 - 1);
+}
+
+/* ============
+Has sidebar Left/right
+=============*/
+
+.breadcrumb-list ul {
+    list-style: none;
+}
+
+.breadcrumb-list ul li a {
+    color: #0b2260;
+}
+
+.breadcrumb-list ul li a:hover {
+    text-transform: uppercase;
+    color: #11427b;
+}
+
+.toc ul {
+    list-style: none;
+}
+
+.toc ul li a {
+    color: #0b2260;
+}
+
+.toc ul li a:hover {
+    text-transform: uppercase;
+    color: #11427b;
+}
+
+.toc h4 {
+    text-align: center;
+}
+
+.next-previous a {
+    color: #0b2260;
+}
+
+.next-previous a:hover {
+    text-transform: uppercase;
+    color: #11427b;
+}
+
+.next {
+    float: right;
+}
+
+/* ============
+Has sidebar Left & Right
+=============*/
+
+.block h4 {
+    text-align: center;
+}
+
+.block a {
+    color: #0b2260;
+}
+
+.block a:hover {
+    color: #11427b;
+}
+
+/* ==============================
+Respnsive columns 1, 2 & 3
+===============================*/
+
+@media screen and (max-width: 800px) {
+    .region-main {
+        #desinax-vgrid.column(@columns);
+
+        &.has-sidebar-left.has-sidebar-right {
+            #desinax-vgrid.column(@columns);
+        }
+    }
+
+    .region-sidebar-left {
+        #desinax-vgrid.column(@columns);
+    }
+
+    .region-sidebar-left.has-sidebar-right,
+    .region-sidebar-right.has-sidebar-left {
+        #desinax-vgrid.column(@columns);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .region-main.has-sidebar-right {
+        #desinax-vgrid.column(@columns);
+    }
+
+    .region-sidebar-right {
+        #desinax-vgrid.column(@columns);
+        #desinax-vgrid.push(0);
+    }
+}
+
+
+figure.figure.right {
+    float: right;
+    margin-left: 8px;
+}
+
+/* ========================================================================
+FOOTER
+==========================================================================*/
+
+.footer-column {
+    #desinax-vgrid.column(@columns / 3);
+}
+
+.site-footer {
+    #desinax-vgrid.column(@columns);
+}
+
+.outer-wrap-footer,
+.inner-wrap-footer {
+    color: #fff;
+    background-color: #d26f89;
+}
+
+.site-footer {
+    text-align: center;
+}
+
+.region-footer {
+    color: #7ef2f4;
+}

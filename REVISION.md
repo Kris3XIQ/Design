@@ -1,5 +1,10 @@
 Revision history
 ========================
+v4.0.0 (2018-12-28)
+* Worked through and completed KMOM04, also pushing tags in one-go.
+
+
+--------------------------
 v3.0.4 (2018-12-23)
 * Adding kmom03 to my responsive menu and the top-menu navbar
 
