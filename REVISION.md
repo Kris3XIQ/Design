@@ -1,5 +1,10 @@
 Revision history
 ========================
+v5.0.1 (2019-01-06)
+* Done with KMOM05 and pushing tags
+
+
+--------------------------
 v4.0.1 (2018-12-28)
 * Pushing tags.
 
