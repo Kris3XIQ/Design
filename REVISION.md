@@ -1,5 +1,10 @@
 Revision history
 ========================
+v6.0.1 (2019-01-09)
+* Worked through my analysis for different websites and their design and added my own KMOM06 theme, with focus on design-elements. Preparing/Pushing tags.
+
+
+--------------------------
 v5.0.1 (2019-01-06)
 * Pushing tags
 
