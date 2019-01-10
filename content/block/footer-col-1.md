@@ -1,3 +1,4 @@
-#### Footer col 1
+#### Om Kursen
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Mer information kring kursen på: <br>[DBWEBB: Design-v2](https://dbwebb.se/kurser/design-v2)<br>
+Du hittar kurs-repot här: <br>[DBWEBB: GitHub](https://github.com/dbwebb-se/design).

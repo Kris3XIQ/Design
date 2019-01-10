@@ -1,3 +1,3 @@
-#### Footer col 3
+#### Mitt Kursrepo
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Mitt redovisa-repo kan du hitta här: [Kris3XIQ/Design](https://github.com/Kris3XIQ/Design).
