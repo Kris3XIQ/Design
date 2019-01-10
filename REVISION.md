@@ -1,5 +1,10 @@
 Revision history
 ========================
+v6.0.3 (2019-01-10)
+* Added my report regarding the completion of kmom06. Preparing and pushing tags.
+
+
+--------------------------
 v6.0.2 (2019-01-10)
 * Worked through my last part of kmom06. Preparing/Pushing tags.
 
